@@ -109,6 +109,8 @@ class SyntaxHighlighter {
 			'perl'		=> 'Perl',
 			'pl'		=> 'Perl',
 			'delphi'	=> 'Delphi',
+			'dataflex'	=> 'Dataflex',
+			'vdf'		=> 'Dataflex',
 			'python'	=> 'Python',
 			'py'		=> 'Python',
 			'ruby'		=> 'Ruby',
@@ -157,7 +159,7 @@ class SyntaxHighlighter {
 			}
 			$scriptTxt = $scriptTxt.'SyntaxHighlighter.all();'."\n\r";
 			$scriptTxt = $scriptTxt.'</script>'."\n\r";
-			$scriptTxt = $scriptTxt.'<link rel="stylesheet" type="text/css" media="screen" href="'.$directory.'/syntaxhighlighter/styles/shCoreMinit.css" />'."\n\r";
+			$scriptTxt = $scriptTxt.'<link rel="stylesheet" type="text/css" media="screen" href="'.$directory.'/syntaxhighlighter/styles/shCoreDataflex.css" />'."\n\r";
 			$parser->GetOutput()->addHeadItem($scriptTxt);
 		}
 
