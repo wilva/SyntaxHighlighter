@@ -33,8 +33,8 @@
 				'get_filenumber get_file_path get_windows_directory global global_variable goto handle if ' +
 				'import_class_protocol in increment integer is item load_def load_driver lock login logout loop ' +
 				'make_directory make_file move not number object of on_key open output_aux_file pointer ' +
-				'procedure property read readln read_block read_hex register_function register_object register_procedure ' +
-				'relate remove_directory renamefile repeat reread returns runprogram save saverecord ' +
+				'procedure procedure_return property read readln read_block read_hex register_function register_object ' +
+				'register_procedure relate remove_directory renamefile repeat reread returns runprogram save saverecord ' +
 				'self send set set_argument_size set_attribute set_field_value set_file_mod_time set_relate short ' +
 				'show showln sleep sort start_ui string structure_abort structure_copy structure_end structure_start ' +
 				'subtract sysdate then time timespan to true type ubigint uchar uinteger unload_driver until unlock ' +
