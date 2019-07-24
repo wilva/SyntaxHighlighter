@@ -21,7 +21,7 @@
 
 	function Brush()
 	{
-		var keywords =	'a abort abort_transation abs addressof an and attach begin begin_transaction bigint boolean break ' +
+		var keywords =	'a abort abort_transation abs address addressof an and attach begin begin_transaction bigint boolean break ' +
 				'broadcast broadcast_focus byref call_driver case cd_end_object cd_popup_object chain char class clear ' +
 				'close close_input close_output cmdline constrain copy_db copy_records create_field create_index currency ' +
 				'current_object date datetime decimal declare_datefile decrement deferred_view define delegate delete ' +
