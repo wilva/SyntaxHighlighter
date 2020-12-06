@@ -40,11 +40,15 @@
 				'subtract sysdate then time timespan to true type ubigint uchar uinteger unload_driver until unlock ' +
 				'use ushort valid_drive variant vconstrain vfind while winput ' +
 				'word write writeln xor zerofile zerostring';
+                var CoDirects = '\\B(?:#if|#ifdef|#else|#endif|#command|#endcommand|#header|#endheader|#replace|#ifclass|#ifsame|' +
+                                "#include|#replace|#ifndef)\\b"; 
 
 		this.regexList = [
 			{ regex: /\(\*[\s\S]*?\*\)/gm,					css: 'comments' },  	// multiline comments (* *)
 			{ regex: /{(?!\$)[\s\S]*?}/gm,					css: 'preprocessor' },  // { }
+                        { regex: new RegExp(CoDirects, 'gmi'),                          css: 'preprocessor' },  // compiler Directives
 			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },  	// one line
+			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },	// strings
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },	// strings
 			{ regex: /\{\$[a-zA-Z]+ .+\}/g,					css: 'color1' },	// compiler Directives and Region tags
 			{ regex: /\b[\d\.]+\b/g,					css: 'value' },		// numbers 12345
